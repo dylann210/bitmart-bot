@@ -1,0 +1,18 @@
+name = "bitmart-bot"
+main = "src/index.ts"
+compatibility_date = "2024-12-30"
+compatibility_flags = ["nodejs_compat"]
+
+[triggers]
+crons = ["0 16 * * *"]  # 23:00 GMT+7 = 16:00 UTC
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bitmart-bot-db"
+database_id = "422f4dda-bb9b-4c93-91b4-c2100e676ba7"
+
+[vars]
+ADMIN_TG_IDS = "5006934207"
+DEFAULT_WELCOME_MESSAGE = "Chào mừng {mention} đã tham gia {group_title}!\nChúng tôi rất vui khi có bạn ở đây."
+WELCOME_AUTO_DELETE_SECONDS = "10"
+GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbw_QPNIVkjqrt9qbFAJpnsDg4xXkn3_4FSjOurOu_bvgYtC_B0lUQjqxZC86emx6vVT/exec"

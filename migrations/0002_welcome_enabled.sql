@@ -1,0 +1,1 @@
+ALTER TABLE GroupSettings ADD COLUMN welcome_enabled INTEGER NOT NULL DEFAULT 1;
